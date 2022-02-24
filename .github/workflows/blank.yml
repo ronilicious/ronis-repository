@@ -1,11 +1,11 @@
 
 
-name: roni
+name: test 2
 
 
 
 
--*roni*
+-*gigachad*
 
   workflow_dispatch:
 
@@ -17,7 +17,9 @@ jobs:
     steps:
     - name: REST API with curl
     run: 
-    curl -X POST "https://twitter.com/ilovemsii"
+curl --request GET 'https://api.twitter.com/2/tweets/search/recent?query=from:ilovemsii'
+
+
      
       - uses: actions/checkout@v2
 
