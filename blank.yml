@@ -1,0 +1,32 @@
+
+
+name:test 1
+
+]
+on:
+
+  push:
+   tags:
+-**
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+     -name: REST API with curl
+     run:
+     curl -X GET "https://twitter.com/ilovemsii"
+      - uses: actions/checkout@v2
+
+     
+      - name: Run a one-line script
+        run: echo roni dabest
+
+ 
+      - name: Run a multi-line script
+        run: |
+
