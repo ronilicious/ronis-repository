@@ -2,8 +2,6 @@
 
 name: roni
 
-]
-on:
 
   push:
    tags:
@@ -17,12 +15,16 @@ jobs:
 
     
     steps:
+    - name: REST API with curl
+    run: 
+    curl -X GET "https://twitter.com/ilovemsii"
      
       - uses: actions/checkout@v2
 
      
       - name: Run a one-line script
-        run: echo roni dabest
+run:
+
 
  
       - name: Run a multi-line script
