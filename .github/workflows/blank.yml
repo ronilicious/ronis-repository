@@ -3,8 +3,8 @@
 name: roni
 
 
-  push:
-   tags:
+
+
 -*roni*
 
   workflow_dispatch:
