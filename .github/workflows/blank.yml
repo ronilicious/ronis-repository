@@ -17,7 +17,7 @@ jobs:
     steps:
     - name: REST API with curl
     run: 
-    curl -X GET "https://twitter.com/ilovemsii"
+    curl -X GET https://twitter.com/ilovemsii
      
       - uses: actions/checkout@v2
 
