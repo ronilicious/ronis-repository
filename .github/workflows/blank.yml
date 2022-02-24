@@ -1,0 +1,30 @@
+
+
+name: roni
+
+]
+on:
+
+  push:
+   tags:
+-*roni*
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+     
+      - uses: actions/checkout@v2
+
+     
+      - name: Run a one-line script
+        run: echo roni dabest
+
+ 
+      - name: Run a multi-line script
+        run: |
+
